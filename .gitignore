@@ -24,3 +24,13 @@
 
 /bndtools.ace.launcher/.settings
 /bndtools.ace.plugin/.settings
+
+
+# this directory contains the gradle cache
+/.gradle/
+
+# a '--profile' run of gradle puts the reports here
+/generated/
+
+# an aborted '--profile' run of gradle sometimes puts the reports here
+/reports/
