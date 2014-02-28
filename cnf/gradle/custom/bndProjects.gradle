@@ -54,4 +54,4 @@ bundle.dependsOn            += [checkClassCycle                  ]
  * Setup task skipping
  */
 
-checkClassCycle.onlyIf   { classCycleDdfFile.exists() }
+checkClassCycle.onlyIf   { file(gradleBuild_classCycleDdfFile).exists() }
