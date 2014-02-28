@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Temporary script to fully exercise the gradle build
+
+git clean -fdx
+git reset --hard
+
+gradle build javadoc releaseNeeded export index p2 dist findbugs findbugstest
