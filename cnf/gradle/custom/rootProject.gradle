@@ -5,3 +5,12 @@
  */
 
 assert(project == rootProject)
+
+
+distclean.doLast {
+  file("$bnd_cnf/releaserepo").listFiles().each {
+    if (it.name != ".gitignore") {
+      delete(it)
+    }
+  }
+}
